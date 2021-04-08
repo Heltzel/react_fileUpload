@@ -21,6 +21,7 @@ app.post('/upload', (req, res) => {
 
     res.json({ fileName: file.name, filePath: `/uploads/${file.name}` })
   })
+  console.log(file.mimetype)
 })
 
 app.listen(5000, () => console.log('Server Started...'))
